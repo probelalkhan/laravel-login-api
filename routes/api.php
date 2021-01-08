@@ -19,6 +19,7 @@ Route::namespace('Api')->group(function(){
     Route::prefix('auth')->group(function(){
 
         Route::post('login', 'AuthController@login');
+        Route::post('refresh-token', 'AuthController@refreshToken');
         Route::post('signup', 'AuthController@signup');
 
     });
